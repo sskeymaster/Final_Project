@@ -171,8 +171,10 @@ function setup() {
         deadSound: function(){
             if (!this.damageSoundPlayed){
                 damage_effect.play();
-                health.health -= 1;
                 this.damageSoundPlayed = true;
+                if (shadows.game_start){
+                   health.health -= 1;
+                }
             }
         },
         deadAnimation: function(){
