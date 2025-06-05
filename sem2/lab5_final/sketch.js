@@ -658,7 +658,6 @@ function resetGame() {
 function keyPressed() {
     if (keyCode === ESCAPE){
         isPaused = !isPaused;
-        
         if (isPaused){
             noLoop();
         } else {
